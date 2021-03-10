@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+ "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+ "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+<constant name="struts.devMode" value="false" />
+ <package name="org.reliableedu.action" extends="struts-default">
+	<action name = "Welcome" class="org.reliableedu.action.welcome" method="execute"> 
+ 		<result name="success">/jsp/index.jsp</result>
+ 	</action>
+ 	<action name = "Riaction" class="org.reliableedu.action.riaction" method="execute"> 
+ 		<result name="success">/jsp/welcome.jsp</result>
+ 		<result name="error">/jsp/error.jsp</result>
+ 	</action>
+ 	<action name = "Contactus" class="org.reliableedu.action.contactus" method="execute"> 
+ 		<result name="success">/jsp/welcome.jsp</result>
+ 		<result name="error">/jsp/error.jsp</result>
+ 	</action>
+ 	<!-- <action name = "Home" class="org.descripitive.statisticsnewui.welcome.WelcomeAction" method="execute"> 
+ 		<result name="success">/jsp/home.jsp</result>
+ 	</action>
+ 	<action name = "SignupAction" class="org.descripitive.statisticsnewui.signup.SignupAction" method="execute"> 
+ 		<result name="success">/jsp/success.jsp</result>
+ 	</action>
+ 	<action name = "Login" class="org.descripitive.statisticsnewui.welcome.WelcomeAction" method="execute"> 
+ 		<result name="success">/jsp/login.jsp</result>
+ 	</action>
+ 	<action name = "Problem" class="org.descripitive.statisticsnewui.problem.ProblemAction" method="execute"> 
+ 		<result name="rawdata">/jsp/rawdata.jsp</result>
+ 		<result name="discretedata">/jsp/discretedata.jsp</result>
+ 		<result name="continuousdata">/jsp/continuousdata.jsp</result>
+ 	</action> -->
+</package>
+</struts>
